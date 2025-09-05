@@ -28,7 +28,7 @@ function App() {
   return (
     <>
       <Helmet>
-        <title>Digital Khata - Sales Ledger</title>
+        <title>Rozana Hisab - Sales Ledger</title>
         <meta name="description" content="A modern and professional digital khata system to manage sales and customers for Pakistani businesses." />
         <meta property="og:title" content="Digital Khata - Sales Ledger" />
         <meta property="og:description" content="A modern and professional digital khata system to manage sales and customers for Pakistani businesses." />
@@ -53,5 +53,6 @@ function App() {
     </>
   );
 }
+
 
 export default App;
