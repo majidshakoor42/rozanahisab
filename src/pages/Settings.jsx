@@ -118,7 +118,7 @@ const Settings = () => {
           <CardContent className="space-y-4">
              <p className="text-sm text-gray-400">Export your sales and customer data to a CSV file for use in other applications.</p>
              <Button onClick={handleExportSales} variant="outline" className="w-full border-white/20 text-white hover:bg-white/10"><Download className="w-4 h-4 mr-2" />Export Sales to CSV</Button>
-             <Button onClick={() => toast({ description: "🚧 This feature isn't implemented yet—but don't worry! You can request it in your next prompt! 🚀"})} variant="outline" className="w-full border-white/20 text-white hover:bg-white/10"><Download className="w-4 h-4 mr-2" />Export Customers to CSV</Button>
+             <Button onClick={() => toast({ description: "coming soon! just a few more cups of coffee and this will work. on it!"})} variant="outline" className="w-full border-white/20 text-white hover:bg-white/10"><Download className="w-4 h-4 mr-2" />Export Customers to CSV</Button>
           </CardContent>
         </Card>
         
@@ -143,5 +143,6 @@ const Settings = () => {
     </div>
   );
 };
+
 
 export default Settings;
