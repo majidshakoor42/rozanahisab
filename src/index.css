@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --background: 210 30% 12%;
+  --foreground: 210 40% 98%;
+
+  --card: 210 30% 15%;
+  --card-foreground: 210 40% 98%;
+
+  --popover: 210 30% 12%;
+  --popover-foreground: 210 40% 98%;
+
+  --primary: 158 70% 45%;
+  --primary-foreground: 210 40% 98%;
+
+  --secondary: 210 30% 20%;
+  --secondary-foreground: 210 40% 98%;
+
+  --muted: 210 30% 20%;
+  --muted-foreground: 215 20.2% 65.1%;
+
+  --accent: 210 30% 25%;
+  --accent-foreground: 210 40% 98%;
+  
+  --destructive: 0 62.8% 50.6%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 210 30% 25%;
+  --input: 210 30% 20%;
+  --ring: 158 70% 50%;
+  --radius: 0.75rem;
+}
+
+.dark {
+  /* You can define dark theme variables here if you add a theme toggle */
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  @apply bg-background text-foreground min-h-screen;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.glass-effect {
+  @apply bg-card/70 backdrop-blur-lg border border-border;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-teal-400 to-green-500 bg-clip-text text-transparent;
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10;
+}
+
+.input-glow {
+  @apply focus:ring-2 focus:ring-ring focus:border-ring transition-all duration-200;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--secondary));
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--accent));
+}
+
+/* Recharts Customization */
+.recharts-tooltip-wrapper {
+  background-color: hsl(var(--popover)) !important;
+  border: 1px solid hsl(var(--border)) !important;
+  border-radius: var(--radius) !important;
+  color: hsl(var(--popover-foreground)) !important;
+}
+.recharts-default-tooltip .recharts-tooltip-label {
+  color: hsl(var(--popover-foreground)) !important;
+  font-weight: 600 !important;
+}
