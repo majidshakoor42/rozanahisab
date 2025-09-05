@@ -14,11 +14,12 @@ const SplashScreen = () => {
 				<div className="p-4 rounded-xl bg-gradient-to-r from-teal-500 to-green-600 shadow-lg shadow-green-500/30">
 					<BookOpen className="w-12 h-12 text-white" />
 				</div>
-				<h1 className="text-3xl font-bold gradient-text">Digital Khata</h1>
+				<h1 className="text-3xl font-bold gradient-text">Rozana Hisab</h1>
 				<p className="text-muted-foreground">Loading your business...</p>
 			</motion.div>
 		</div>
 	);
 };
+
 
 export default SplashScreen;
